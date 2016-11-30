@@ -5,9 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-//var routes = require('./routes/index');
-//var users = require('./routes/users');
-
 var app = express();
 
 // view engine setup
@@ -22,8 +19,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'src')));
 
-//app.use('/', routes);
-//app.use('/users', users);
+
+// Run index.html file from public
+app.get('/', function(request, response){
+  response.sendfile("index.html")
+});
+
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
@@ -45,10 +46,6 @@ if (app.get('env') === 'development') {
     });
   });
 }
-
-app.get('/', function(request, response){
-  response.sendfile("index.html")
-});
 
 // production error handler
 // no stacktraces leaked to user
