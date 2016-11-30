@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,MAAO;EACL,gBAAgB,EAAE,GAAG;;ACCvB,MAAO;EACL,KAAK,EAAE,eAAe",
+"sources": ["../scss/_var.scss","../scss/copia.scss"],
+"names": [],
+"file": "copia.css"
+}
