@@ -1,0 +1,26 @@
+{
+  "name": "copia-web-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mzubairsolangi/copia-web-landing.git"
+  },
+  "author": "Copia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mzubairsolangi/copia-web-landing/issues"
+  },
+  "homepage": "https://github.com/mzubairsolangi/copia-web-landing#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "serve-favicon": "^2.3.2"
+  }
+}
