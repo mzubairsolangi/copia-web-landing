@@ -43,24 +43,353 @@
   float: left;
   width: 100%; }
 
+.button-Orange-Default, .home-banner-container button.start-saving-btn {
+  width: 484.3px;
+  height: 90px;
+  border-radius: 45px;
+  border: 1px solid #ff6a13;
+  background-color: #ff6a13;
+  outline: none;
+  font-family: "Avenir Next";
+  font-size: 28.4px;
+  margin: 0 auto;
+  display: block;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff; }
+
+.copia-nav-link-text, header nav.nav-wrapper ul.nav-list-left li a, header nav.nav-wrapper ul.nav-list-right li a {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 0;
+  margin: 0 20px; }
+
+.web-slider-header-text, .home-banner-container section.banner h2.slider-heading {
+  font-size: 72px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  width: 55%;
+  margin: 0 auto; }
+
+.Slider-Header {
+  font-size: 72px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff; }
+
+.Black-Header {
+  font-size: 50px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #252525; }
+
+.Green-Header {
+  font-family: Avenir;
+  font-size: 50px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #00dc72; }
+
+.Body-Header-Alt, main .incredible-partner-container .about-partners {
+  font-size: 30px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #252525; }
+
+.Slider-Subheader, .home-banner-container section.banner .slider-sub-header {
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff; }
+
+.Body-Header {
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #252525; }
+
+.Press-Tiny-Header {
+  font-size: 24px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  color: #6d6d72; }
+
+.Text-Style {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: right;
+  color: #ffffff; }
+
+.Link-Style-w-Underline {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  color: #00b55e; }
+
+.Body-Text {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #252525; }
+
+.HdrFtr-Menu-Txt-Style {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff; }
+
+.Text-Style-3 {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #6d6d72; }
+
+.Text-Style-2 {
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #939598; }
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Avenir Next'; }
 
-nav.nav-wrapper {
+header .copia-logo {
+  display: block;
+  width: 197px;
+  float: left;
+  height: 64px;
+  margin-left: 55px;
+  cursor: pointer; }
+  header .copia-logo img.logo {
+    margin-top: 12px; }
+header nav.nav-wrapper {
   box-shadow: none;
   background-color: transparent; }
-  nav.nav-wrapper .brand-logo {
-    position: absolute;
-    color: #fff;
+  header nav.nav-wrapper .nav-list-container {
+    margin-top: 15px; }
+  header nav.nav-wrapper ul.nav-list-left li, header nav.nav-wrapper ul.nav-list-right li {
+    line-height: 40px; }
+    header nav.nav-wrapper ul.nav-list-left li a:hover, header nav.nav-wrapper ul.nav-list-left li a:active, header nav.nav-wrapper ul.nav-list-right li a:hover, header nav.nav-wrapper ul.nav-list-right li a:active {
+      border-bottom: 5px solid #00dc72;
+      background: transparent; }
+  header nav.nav-wrapper ul.nav-list-right {
     display: inline-block;
-    font-size: 2.1rem;
-    padding: 0;
-    white-space: nowrap;
-    height: 54px;
-    top: 12px;
-    left: 54px; }
+    float: right; }
+  header nav.nav-wrapper ul.nav-list-left {
+    display: inline-block;
+    float: left;
+    margin-left: 85px; }
+header .getting-started-dropdown {
+  position: relative; }
+  header .getting-started-dropdown i.material-icons {
+    line-height: 0;
+    margin-top: 22px;
+    height: 20px; }
+  header .getting-started-dropdown ul.getting-started {
+    width: 182px !important;
+    left: 0 !important;
+    top: 60px !important;
+    background: transparent; }
+    header .getting-started-dropdown ul.getting-started li {
+      border-bottom: none !important; }
+      header .getting-started-dropdown ul.getting-started li a.g-started-item:hover {
+        border: none !important;
+        padding: 14px 0; }
+      header .getting-started-dropdown ul.getting-started li a.g-started-item {
+        padding: 14px 0;
+        border: none !important; }
+    header .getting-started-dropdown ul.getting-started li:hover {
+      background-color: #00dc72; }
+
+@media screen and (max-width: 600px) {
+  header .copia-logo {
+    display: block;
+    width: 55px;
+    height: 64px;
+    margin: 0 auto; } }
+.main-wrapper {
+  display: block;
+  float: left;
+  width: 100%; }
+
+.button-Orange-Default, .home-banner-container button.start-saving-btn {
+  width: 484.3px;
+  height: 90px;
+  border-radius: 45px;
+  border: 1px solid #ff6a13;
+  background-color: #ff6a13;
+  outline: none;
+  font-family: "Avenir Next";
+  font-size: 28.4px;
+  margin: 0 auto;
+  display: block;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff; }
+
+.copia-nav-link-text, header nav.nav-wrapper ul.nav-list-left li a, header nav.nav-wrapper ul.nav-list-right li a {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 0;
+  margin: 0 20px; }
+
+.web-slider-header-text, .home-banner-container section.banner h2.slider-heading {
+  font-size: 72px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  width: 55%;
+  margin: 0 auto; }
+
+.Slider-Header {
+  font-size: 72px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff; }
+
+.Black-Header {
+  font-size: 50px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #252525; }
+
+.Green-Header {
+  font-family: Avenir;
+  font-size: 50px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #00dc72; }
+
+.Body-Header-Alt, main .incredible-partner-container .about-partners {
+  font-size: 30px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #252525; }
+
+.Slider-Subheader, .home-banner-container section.banner .slider-sub-header {
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff; }
+
+.Body-Header {
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #252525; }
+
+.Press-Tiny-Header {
+  font-size: 24px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  color: #6d6d72; }
+
+.Text-Style {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: right;
+  color: #ffffff; }
+
+.Link-Style-w-Underline {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  color: #00b55e; }
+
+.Body-Text {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #252525; }
+
+.HdrFtr-Menu-Txt-Style {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff; }
+
+.Text-Style-3 {
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #6d6d72; }
+
+.Text-Style-2 {
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #939598; }
 
 .home-banner-container {
   background: url("../img/home-slider.png") no-repeat;
@@ -70,5 +399,27 @@ nav.nav-wrapper {
   background-size: 100% 100%;
   height: 768px;
   object-fit: contain; }
+  .home-banner-container section.banner {
+    margin-top: 92px; }
+  .home-banner-container section.saving-container {
+    margin-top: 240px; }
+
+main {
+  display: block;
+  float: left;
+  width: 100%; }
+  main .incredible-partner-container {
+    display: block;
+    float: left;
+    background-color: white;
+    width: 100%; }
+    main .incredible-partner-container ul.partner-logos {
+      display: inline-block;
+      width: 100%;
+      float: left; }
+      main .incredible-partner-container ul.partner-logos li {
+        float: left;
+        display: inline-block;
+        margin: 0 21px; }
 
 /*# sourceMappingURL=copia.css.map */

@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <link rel="stylesheet" href="scss/copia.css">
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link rel="stylesheet" href="scss/copia.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
@@ -17,20 +17,15 @@
   <div class="home-banner-container">
     <!--header-->
     <header>
-        <!-- Dropdown Structure -->
-        <ul id="dropdown1" class="dropdown-content">
-          <li><a href="">I'm a Business</a></li>
-          <li><a href="">I'm a non profit</a></li>
-          <li><a href="">Drive for Copia</a></li>
-        </ul>
+      <a class="copia-logo">
+        <img src="img/copia-logo.png" alt="Copia logo" class="responsive-img logo hide-on-small hide-on-small-only">
+        <!--<img src="img/copia-symbol.svg" alt="Copia logo" class="responsive-img hide-on-med-and-up show-on-small">-->
+      </a>
+
         <nav class="nav-wrapper">
-            <a class="brand-logo">
-              <img src="img/copia-logo.png" alt="Copia logo" class="responsive-img hide-on-med-and-down">
-              <img src="img/copia-symbol.svg" alt="Copia logo" class="responsive-img hide-on-med-and-up">
-            </a>
             <div class="row">
-              <div class="col s7 push-s5">
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
+              <div class="col s12 m10 l9 right nav-list-container">
+                <ul  class="nav-list-left hide-on-small-only">
                   <li>
                     <a>How It Works</a>
                   </li>
@@ -41,29 +36,74 @@
                     <a>Who We Are</a>
                   </li>
                 </ul>
-                <ul class="right hide-on-med-and-down">
+                <ul class="hide-on-small-only nav-list-right">
                   <li><a href="">Login</a></li>
-                  <li><a class="dropdown-button" href="" data-activates="dropdown1">Get Started<i class="material-icons right">arrow_drop_down</i></a></li>
+                  <li class="getting-started-dropdown">
+                    <!-- Dropdown Structure -->
+                    <ul id="dropdown1" class="getting-started dropdown-content">
+                      <li><a href="" class="g-started-item">I'm a Business</a></li>
+                      <li><a href="" class="g-started-item">I'm a non profit</a></li>
+                      <li><a href="" class="g-started-item">Drive for Copia</a></li>
+                    </ul>
+                    <a class="dropdown-button" href="" data-activates="dropdown1">Get Started<i class="material-icons right">arrow_drop_down</i></a>
+                  </li>
                 </ul>
               </div>
             </div>
         </nav>
     </header>
 
-    <article class="banner">
-      <h2>your food is too valuable to be waste.</h2>
-      <p>Save money, Reduce waste, Feed communities in need</p>
-    </article>
-
-    <div class="start-saving-container">
-      <button class="start-saving-btn">Start Saving money Today</button>
+    <div class="row">
+      <div class="col s12 md12 l12">
+        <section class="banner">
+          <h2 class="slider-heading">Your food is too valuable to be wasted</h2>
+          <p class="slider-sub-header">Save money, Reduce waste, Feed communities in need</p>
+        </section>
+        <section class="saving-container">
+          <button class="start-saving-btn waves-effect">Start Saving money Today</button>
+        </section>
+      </div>
     </div>
   </div>
 
   <main>
-    <section>
-      <h1>Welcoem to content</h1>
-      <i class="fa fa-camera-retro fa-lg"></i> fa-lg
+    <section class="incredible-partner-container">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 md12 l12">
+            <p class="about-partners">Our incredible partners trust Copia to make the most of their excess food!</p>
+            <ul class="partner-logos">
+              <li><a href="#"><img src="img/zesty.png" alt="zesty.png"></a></li>
+              <li><a href="#"><img src="img/sodexo.png" alt="zesty.png"></a></li>
+              <li><a href="#"><img src="img/foxtail.png" alt="foxtail.png"></a></li>
+              <li><a href="#"><img src="img/cico.png" alt="cico.png"></a></li>
+              <li><a href="#"><img src="img/foxtail.png" alt="foxtail.png"></a></li>
+              <li><a href="#"><img src="img/cico.png" alt="cico.png"></a></li>
+            </ul>
+          </div>
+         </div>
+
+        <div class="row">
+
+          <div class="col s12 m6 l6">
+            <img src="img/fast-and-easy.png" class="center" alt="Fast and easy">
+            <h3>Fast and Easy</h3>
+            <p>Request a pickup in seconds through our app or online platform.</p>
+          </div>
+          <div class="col s12 m6 l6">
+            <img src="img/car.png" alt="Fast and easy">
+            <h3>Fast and Easy</h3>
+            <p>Request a pickup in seconds through our app or online platform.</p>
+          </div>
+          <div class="col s12 m6 l6">
+            <img src="img/service-money.png" alt="Fast and easy">
+            <h3>Fast and Easy</h3>
+            <p>Request a pickup in seconds through our app or online platform.</p>
+          </div>
+
+        </div>
+
+      </div>
     </section>
   </main>
   <footer></footer>
