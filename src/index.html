@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Title</title>
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <!--<link rel="stylesheet" href="../node_modules/materialize-css/css/ghpages-materialize.css">-->
   <link rel="stylesheet" href="scss/copia.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <!--<script src="../node_modules/materialize-css/js/materialize.js"></script>-->
 </head>
 <body>
 
@@ -17,15 +20,41 @@
   <div class="home-banner-container">
     <!--header-->
     <header>
-      <a class="copia-logo">
+      <a class="copia-logo hide-on-small-only">
         <img src="img/copia-logo.png" alt="Copia logo" class="responsive-img logo hide-on-small hide-on-small-only">
-        <!--<img src="img/copia-symbol.svg" alt="Copia logo" class="responsive-img hide-on-med-and-up show-on-small">-->
       </a>
-
         <nav class="nav-wrapper">
-            <div class="row">
+          <!--Mobile navigation -->
+          <div class="row show-on-small hide-on-med-and-up mobile-nav-container">
+            <div class="col s4 m4">
+              <a href="" class="nav-icon">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="col s4 m4">
+              <a href=""  class="copia-logo-mobile">
+                <img src="img/copia-symbol.svg" alt="Copia logo">
+              </a>
+            </div>
+            <div class="col s4 m4 mobile-getting-started">
+              <ul class=" nav-list-right">
+                <li>
+                  <!-- Dropdown Structure -->
+                  <ul id="dropdown2" class="getting-started dropdown-content">
+                    <li><a href="" class="g-started-item">I'm a Business</a></li>
+                    <li><a href="" class="g-started-item">I'm a non profit</a></li>
+                    <li><a href="" class="g-started-item">Drive for Copia</a></li>
+                  </ul>
+                  <a class="dropdown-button get-started-btn" href="" data-activates="dropdown2">Get Started<i class="material-icons right">arrow_drop_down</i></a>
+                </li>
+              </ul>
+             </div>
+          </div>
+
+          <!--Desktop navigation -->
+            <div class="row hide-on-small-and-down">
               <div class="col s12 m10 l9 right nav-list-container">
-                <ul  class="nav-list-left hide-on-small-only">
+                <ul  class="nav-list-left">
                   <li>
                     <a>How It Works</a>
                   </li>
@@ -36,7 +65,7 @@
                     <a>Who We Are</a>
                   </li>
                 </ul>
-                <ul class="hide-on-small-only nav-list-right">
+                <ul class=" nav-list-right">
                   <li><a href="">Login</a></li>
                   <li class="getting-started-dropdown">
                     <!-- Dropdown Structure -->
@@ -55,12 +84,12 @@
 
     <div class="row">
       <div class="col s12 md12 l12">
-        <section class="banner">
+        <section class="header-slider">
           <h2 class="slider-heading">Your food is too valuable to be wasted</h2>
           <p class="slider-sub-header">Save money, Reduce waste, Feed communities in need</p>
         </section>
         <section class="saving-container">
-          <button class="start-saving-btn waves-effect">Start Saving money Today</button>
+          <a href="https://app.gocopia.com/#/signup/start" target="_blank" title="https://app.gocopia.com/#/signup/start" class="start-saving-btn btn waves-effect">Start Saving money Today</a>
         </section>
       </div>
     </div>
@@ -83,30 +112,216 @@
           </div>
          </div>
 
-        <div class="row">
+        <div class="row online-platform-container">
+          <div class="col s12 m4 l4">
+            <div class="platform-images">
+              <img src="img/fast-and-easy.png" alt="Fast and easy" class="center online-platform-mobile">
+              <i class="fa fa-long-arrow-right fa-5x online-platform-arrow" aria-hidden="true"></i>
+            </div>
+            <h3 class="platform-title">Fast and Easy</h3>
+            <p class="platform-desc">Request a pickup in seconds through our app or online platform.</p>
+          </div>
+          <div class="col s12 m4 l4">
+            <div class="platform-images">
+              <img src="img/car.png" alt="Excess to Access" class="online-platform-mobile">
+              <i class="fa fa-long-arrow-right fa-5x online-platform-arrow" aria-hidden="true"></i>
+            </div>
+            <h3 class="platform-title">Excess to Access</h3>
+            <p class="platform-desc">We take your excess food directly to feed communities in need.</p>
+          </div>
+          <div class="col s12 m4 l4">
+            <div class="platform-images">
+              <img src="img/service-money.png" alt="Fast and easy" class="save-money online-platform-mobile">
+            </div>
+            <h3 class="platform-title">Save Money</h3>
+            <p class="platform-desc">Businesses could save up to X and feel the warm and fuzzies.</p>
+          </div>
+        </div>
+        <section class="how-it-works-btn-container">
+          <a href="#" class="how-it-works-btn btn waves-effect" title="How It Works">See how it works</a>
+        </section>
+      </div>
+      <p class="customers-report-warning">Warning! Customers report warm and fuzzies from helping feed their community.</p>
+    </section>
+    <section class="get-even-more-container">
+      <div class="get-more-items-container container">
 
-          <div class="col s12 m6 l6">
-            <img src="img/fast-and-easy.png" class="center" alt="Fast and easy">
-            <h3>Fast and Easy</h3>
-            <p>Request a pickup in seconds through our app or online platform.</p>
-          </div>
-          <div class="col s12 m6 l6">
-            <img src="img/car.png" alt="Fast and easy">
-            <h3>Fast and Easy</h3>
-            <p>Request a pickup in seconds through our app or online platform.</p>
-          </div>
-          <div class="col s12 m6 l6">
-            <img src="img/service-money.png" alt="Fast and easy">
-            <h3>Fast and Easy</h3>
-            <p>Request a pickup in seconds through our app or online platform.</p>
-          </div>
+        <div class="get-more-item-info">
+          <p class="get-more-desc">When you give, you get even more.</p>
 
+          <ul class="row get-more-list">
+            <li class="col l4">
+              <div class="get-more">
+                <i class="fa fa-line-chart  fa-5x"></i>
+                <p>Improve Your Bottom Line</p>
+              </div>
+            </li>
+            <li class="col l4">
+              <div class="get-more">
+                <i class="fa fa-pie-chart  fa-5x"></i>
+                <p>Access Enhanced Tax Benefits</p>
+              </div>
+            </li>
+            <li class="col l4">
+              <div class="get-more">
+                <i class="fa fa-eye  fa-5x"></i>
+                <p>Access Enhanced Tax Benefits</p>
+              </div>
+            </li>
+            <li class="col l4">
+              <div class="get-more">
+                <i class="fa fa-globe fa-5x"></i>
+                <p>See Your Impact</p>
+              </div>
+            </li>
+            <li class="col l4">
+              <div class="get-more">
+                <i class="fa fa-users  fa-5x"></i>
+                <p>Help Protect the Environment</p>
+              </div>
+            </li>
+            <li class="col l4">
+              <div class="get-more">
+                <i class="fa fa-heart-o fa-5x"></i>
+                <p>Support Your
+                  Local Community</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="explore-app-conatiner">
+      <div class="container">
+        <div class="row explore-app-row">
+          <div class="grid-example col s12 l6 m6">
+            <a href="">
+              <img src="img/destop-mobile.png" alt="Axplore App photo" class="explore-app-img">
+            </a>
+          </div>
+          <div class="grid-example col s12 l6 m6">
+            <p class="explore-app-dec">We’ve developed technology to make food donations fast, easy, and lucrative</p>
+          </div>
+        </div>
+        <div class="row explore-app-btn-row">
+
+          <div class="col s12 l6">
+            <a href="" class="explore-app-btn btn waves-effect right" title="How It Works page">Explore the app</a>
+          </div>
+          <div class="col s12 l6">
+            <a href="https://appsto.re/us/oFB6_.i" target="_blank" title="https://appsto.re/us/oFB6_.i" class="app-store left">
+              <img src="img/app-store.png" alt="App store link">
+            </a>
+          </div>
+      </div>
+
+    </div></section>
+    <section class="start-saving-today-container">
+      <div class="container">
+        <div class="row ">
+          <div class="col s12 m12 l12">
+            <p class="start-saving-today-info">Let’s unlock the value of your surplus food.</p>
+            <a href="https://app.gocopia.com/#/signup/start" target="_blank"
+               title="https://app.gocopia.com/#/signup/start"
+               class="start-saving-today-btn btn waves-effect">Start Saving Today
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="as-featured-in-container">
+      <div class="container">
+        <div class="row as-featured-btn-row">
+          <div class="col s12 l6">
+            <a href="https://www.gocopia.com/#/recipient"
+               target="_blank"
+               title="https://www.gocopia.com/#/recipien"
+               class="non-profit-btn btn waves-effect right">I’m a non-profit
+            </a>
+          </div>
+          <div class="col s12 l6">
+            <a href="https://www.gocopia.com/#/driver"
+               target="_blank"
+               title="https://www.gocopia.com/#/driver"
+               class="become-driver-btn btn waves-effect left">Become a driver</a>
+          </div>
+        </div>
+      </div>
+      <div class="as-featured-imgs-container">
+        <p class="as-featured-title">As featured in...</p>
+        <ul class="collection as-featured-logos">
+          <li class="collection-item">
+            <a href="http://finance.yahoo.com/news/feeding-forward-accelerates-progress-toward-113000521.html" target="_blank" title="Fortune logo">
+              <img src="img/fortune.png" alt="fortune Logo">
+            </a>
+          </li>
+          <li class="collection-item">
+            <a href="http://www.cnet.com/news/feeding-forward-app-delivers-food-to-homeless-shelters-in-real-time" target="_blank" title="C net logo" >
+              <img src="img/cnet.png" alt="C-net Logo"></a>
+          </li>
+          <li class="collection-item"><a href="http://finance.yahoo.com/news/feeding-forward-accelerates-progress-toward-113000521.html" target="_blank">
+            <img src="img/yahoo-finance.png" alt="Yahoo Logo"></a>
+          </li>
+          <li class="collection-item"><a href="http://www.sfgate.com/news/article/Have-leftovers-Apps-ensure-they-click-with-5018174.php" target="_blank"><img src="img/san-francisco.png" alt="San Francisco Logo"></a></li>
+          <li class="collection-item"><a href="http://www.independent.co.uk/news/world/americas/young-woman-develops-phone-app-to-feed-almost-600000-homeless-people-in-san-francisco-10348579.html" target="_blank">
+            <img src="img/independent.png" alt="independent Logo"></a></li>
+          <li class="collection-item"><a href="http://paidpost.nytimes.com/toyota/mothers-of-invention-presented-by-women-in-the-world.html?_r=0#Copia" target="_blank">
+            <img src="img/dark-time.png" alt="New Yark Time Logo"></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="container">
+      <div class="row">
+        <div class="col s12 l12">
+          <nav class="footer-nav-container">
+            <a href="https://copia.workable.com" target="_blank" title="https://copia.workable.com" class="footer-nav-item">Careers</a>
+            <a href="https://www.gocopia.com/#/faq"  target="_blank" title="https://www.gocopia.com/#/faq" class="footer-nav-item">FAQ</a>
+            <a href="https://www.gocopia.com/#/contactus" target="_blank" title="https://www.gocopia.com/#/contactus" class="footer-nav-item">Contact</a>
+            <a href="https://www.gocopia.com/#/privacy" target="_blank" title="https://www.gocopia.com/#/privacy" class="footer-nav-item">Privacy Policy</a>
+            <a href="https://www.gocopia.com/#/tos" target="_blank" title="https://www.gocopia.com/#/tos" class="footer-nav-item">Terms & Conditions</a>
+          </nav>
+        </div>
+        <div class="social-nav-conatiner">
+          <ul class="social-nav-list">
+            <li class="col">
+              <a href="https://www.facebook.com/GoCopia" target="_blank" title="https://www.facebook.com/GoCopia" class="white-text social-icon">
+                <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="col">
+              <a href="https://twitter.com/gocopia" target="_blank" title=" https://twitter.com/gocopia" class="white-text social-icon">
+                <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li class="col">
+              <a href="https://www.instagram.com/gocopia" target="_blank" title="https://www.instagram.com/gocopia" class="white-text social-icon">
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="col">
+              <a href="https://www.linkedin.com/company/2874011" target="_blank" title="https://www.linkedin.com/company/2874011" class="white-text social-icon">
+                <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="col">
+              <a href="https://medium.com/@copia" target="_blank" title="https://medium.com/@copia" class="white-text social-icon"><i class="fa fa-medium fa-2x" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row hours-of-operation-container">
+          <div class="col s12 l12">
+            <h6 class="operation-title">Hours of Operation</h6>
+            <p class="operation-hours">M-F 8am to 8pm PST, Sat-Sun 10am to 6pm PST</p>
+            <p class="operation-address">237 Kearny St. #9036, San Francisco, CA 94108</p>
+            <p class="copy-right"><i class="fa fa-copyright copy-right-symbol" aria-hidden="true"></i>2016 Go Copia, PBC.</p>
+          </div>
         </div>
 
       </div>
     </section>
-  </main>
-  <footer></footer>
+  </footer>
 </div>
 </body>
 </html>

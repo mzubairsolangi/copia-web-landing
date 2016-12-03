@@ -8,13 +8,57 @@
   width: 484.3px;
   height: 90px;
   border-radius: 45px;
-  border: 1px solid #ff6a13;
-  background-color: #ff6a13;
+  border: 5px solid #ff6a13;
   outline: none;
   font-family: "Avenir Next";
   font-size: 28.4px;
   margin: 0 auto;
   display: block;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ff6a13;
+}
+.button-green-Default {
+  width: 315px;
+  height: 76px;
+  border-radius: 38px;
+  background-color: white;
+  border: solid 5px #00dc72;
+  font-family: "Avenir Next";
+  font-size: 24px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #00dc72;
+}
+
+.Button-Orange-Small {
+  font-family: "Avenir Next";
+  width: 315px;
+  height: 76px;
+  border-radius: 38px;
+  background-color: white;
+  border: solid 5px #ff6a13;
+  font-size: 24px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ff6a13;
+  display: block;
+  margin: 0 auto;
+}
+.button-grayish-Default {
+  font-family: "Avenir Next";
+  width: 302px;
+  height: 76px;
+  border-radius: 38px;
+  background-color: #afafaf;
+  border-color: #afafaf;
+  font-size: 24px;
   font-weight: 900;
   font-style: normal;
   font-stretch: normal;
@@ -40,7 +84,6 @@
   text-align: center;
   color: #ffffff;
   width: 55%;
-  margin: 0 auto;
 }
 
 .Slider-Header {
@@ -62,7 +105,7 @@
 }
 
 .Green-Header {
-  font-family: Avenir;
+  font-family: "Avenir Next";
   font-size: 50px;
   font-weight: 500;
   font-style: normal;
@@ -137,6 +180,15 @@
 .HdrFtr-Menu-Txt-Style {
   font-size: 20px;
   font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.HdrFtr-Menu-Txt-white-Style {
+  font-size: 20px;
+  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   text-align: center;

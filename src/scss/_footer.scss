@@ -1,0 +1,60 @@
+footer.page-footer {
+  display: block;
+  float: left;
+  width: 100%;
+  background: #252525;
+  height: 495px;
+  .footer-nav-container {
+    @extend .HdrFtr-Menu-Txt-Style;
+    background: transparent;
+    box-shadow: none;
+    margin-top: 46px;
+    a.footer-nav-item{
+      padding: 0 20px;
+      border-right: 1px solid #ffffff;
+    }
+    a.footer-nav-item:last-child{
+      border-right: none;
+    }
+    a.footer-nav-item:hover{
+      color: #00dc72;
+    }
+  }
+  .social-nav-conatiner {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    ul.social-nav-list{
+      display: block;
+      float: left;
+      a.social-icon:hover {
+        color: #00dc72 !important;
+      }
+    }
+  }
+  .hours-of-operation-container {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    .operation-hours {
+      @extend .HdrFtr-Menu-Txt-white-Style;
+      margin: 0;
+    }
+    .operation-address {
+      @extend .HdrFtr-Menu-Txt-white-Style;
+      margin: 18px 0 0 0;
+    }
+    .operation-title {
+      @extend .HdrFtr-Menu-Txt-white-Style;
+      font-weight: 500;
+      margin: 10px 0 0 0;
+    }
+    .copy-right {
+      @extend .Text-Style-3;
+      margin: 23px 0 0 0;
+    }
+    .copy-right-symbol{
+      padding-right: 3px;
+    }
+  }
+}

@@ -8,10 +8,11 @@
   background-size: 100% 100%;
   height: 768px;
   object-fit: contain;
-  section.banner {
+  section.header-slider {
     margin-top: 92px;
     h2.slider-heading {
       @extend .web-slider-header-text;
+      margin: 0 auto;
     }
     .slider-sub-header {
       @extend .Slider-Subheader;
@@ -20,8 +21,15 @@
   section.saving-container {
     margin-top: 240px;
   }
-  button.start-saving-btn{
+  a.start-saving-btn{
     @extend .button-Orange-Default;
+    background-color: transparent;
+    line-height: 80px;
+    text-transform: inherit;
+  }
+  a.start-saving-btn:hover{
+    background-color: #ff6a13;
+    color: white;
   }
 }
 
@@ -47,5 +55,243 @@ main {
         margin: 0 21px;
       }
     }
+
+    .online-platform-container {
+      margin-top: 76px;
+      text-align: center;
+      .platform-images {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        height: 151px;
+        .online-platform-arrow {
+          position: absolute;
+          top: 50px;
+          right: -40px;
+        }
+        img.online-platform-mobile {
+          display: block;
+          margin: 0 auto;
+        }
+        .save-money {
+          padding-top: 42px;
+        }
+      }
+      .platform-title {
+        @extend .Body-Header;
+        margin: 14px 0 0 0;
+      }
+      .platform-desc {
+        @extend .Body-Text;
+      }
+    }
+    .how-it-works-btn-container {
+      a.how-it-works-btn {
+        @extend .button-green-Default;
+        margin: 0 auto;
+        display: block;
+        line-height: 63px;
+        text-transform: inherit;
+      }
+      a.how-it-works-btn:hover {
+        background-color: #00dc72;
+        color: white;
+      }
+    }
+    .customers-report-warning {
+      @extend .Text-Style-2;
+      margin: 48px 0 80px 0;
+    }
   }
+  .get-even-more-container {
+    background: url('../img/get-more.png');
+    display: block;
+    float: left;
+    width: 100%;
+    height: 907px;
+    .get-more-items-container{
+      display: block;
+      background-color: white;
+      height: 732px;
+      margin-top: 80px;
+      .get-more-item-info {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 37px;
+        .get-more-desc {
+          @extend .Black-Header;
+          font-size: 45px;
+          border-bottom: 10px solid #00dc72;
+          margin: 0 auto;
+        }
+        .get-more-list {
+          display: block;
+          text-align: center;
+          margin-top: 76px;
+          li{
+            display: inline-block;
+            float: left;
+            margin-bottom: 44px;
+            i {
+              display: block;
+            }
+            p {
+              @extend .Body-Header;
+              font-size: 29px;
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+  .explore-app-conatiner {
+    display: block;
+    float: left;
+    width: 100%;
+    .explore-app-img {
+      width: 85%;
+    }
+    .explore-app-dec {
+      @extend .Green-Header;
+      line-height: 55px;
+      margin: 0;
+    }
+    .explore-app-row {
+      margin-top: 91px;
+    }
+    .explore-app-btn-row {
+      padding: 35px 0 89px 0;
+      a.explore-app-btn {
+        @extend .button-green-Default;
+        line-height: 63px;
+        text-transform: inherit;
+      }
+      a.explore-app-btn:hover{
+        background-color: #00dc72;
+        color: white;
+      }
+    }
+  }
+  .start-saving-today-container {
+    background: url('../img/start-saving-today.bg.png');
+    display: block;
+    float: left;
+    width: 100%;
+    height: 349px;
+    .start-saving-today-info {
+      @extend .Body-Header-Alt;
+      margin: 102px 0 0 0;
+    }
+    a.start-saving-today-btn{
+      @extend .Button-Orange-Small;
+      background-color: transparent;
+      line-height: 63px;
+      text-transform: inherit;
+      margin-top: 26px;
+
+    }
+    a.start-saving-today-btn:hover{
+      background-color: #ff6a13;
+      color: white;
+    }
+  }
+  .as-featured-in-container {
+    display: block;
+    float: left;
+    width: 100%;
+    .as-featured-btn-row {
+      margin-top: 50px;
+      a.non-profit-btn {
+        margin-right: 21px;
+      }
+      a.become-driver-btn, a.non-profit-btn {
+        @extend .button-grayish-Default;
+        line-height: 75px;
+        text-transform: inherit;
+
+      }
+       a.non-profit-btn:hover{
+        background-color: #939598;
+        color: white;
+      }
+      a.become-driver-btn:hover{
+        background-color: #939598;
+        color: white;
+      }
+    }
+    .as-featured-imgs-container {
+      margin-top: 18px;
+      display: block;
+      float: left;
+      width: 100%;
+      .as-featured-title {
+        @extend .Press-Tiny-Header;
+        padding-left: 50px;
+        margin: 0;
+      }
+      ul.as-featured-logos {
+        border: none;
+        width: 97%;
+        margin: 0 auto;
+        li.collection-item {
+          float: left;
+          display: inline-block;
+          padding-right: 0;
+          border: none;
+        }
+
+      }
+    }
+
+  }
+}
+
+@media #{$small-and-down} {
+ .home-banner-container {
+   height: 530px;
+   section.header-slider {
+     margin: 0 !important;
+     h2.slider-heading{
+       width: 100% !important;
+       margin: 75px 0 0 0;
+       font-size: 50px;
+     }
+     .slider-sub-header {
+      font-size: 20px;
+     }
+   }
+   section.saving-container {
+     margin-top: 38px;
+   }
+   a.start-saving-btn {
+     line-height: 64px;
+     width: 100%;
+     height: 74px;
+   }
+ }
+  .incredible-partner-container {
+    ul.partner-logos{
+      display: inline-block;
+      width: 100%;
+      float: left;
+      li{
+        float: left;
+        display: inline-block;
+        margin: 0 21px;
+      }
+    }
+  }
+
+}
+@media #{$medium-and-up} {
+  // styles for medium screens and larger
+}
+@media #{$medium-and-down} {
+  // styles for medium screens and down
+}
+@media #{$large-and-up} {
+  // styles for large screens and up
 }

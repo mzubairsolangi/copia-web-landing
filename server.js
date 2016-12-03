@@ -25,6 +25,7 @@ app.get('/', function(request, response){
 });
 
 
+
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
@@ -53,7 +54,7 @@ if (app.get('env') === 'development') {
 }
 
 // production error handler
-// no stack-traces leaked to user
+// no stacktraces leaked to user
 app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error', {
@@ -62,9 +63,20 @@ app.use(function(err, req, res, next) {
   });
 });
 
-app.listen(3000, function () {
+
+
+process.env.NODE_ENV = process.env.NODE_ENV || "production";
+//process.env.NODE_ENV = process.env.NODE_ENV || "development";
+console.log("Node Environment = " + process.env.NODE_ENV);
+
+//app.config = config[process.env.NODE_ENV];
+
+//app.listen(3000, function () {
+app.listen(process.env.NODE_ENV || 3000, function () {
   console.log('Example app listening on port 3000!')
 });
+
+
 
 
 module.exports = app;

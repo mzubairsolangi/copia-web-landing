@@ -1,0 +1,52 @@
+.who-we-are-banner-container {
+  background-color: #252525;
+  width: 100%;
+  float: left;
+  display: block;
+  background-size: 100% 100%;
+  height: 503px;
+  object-fit: contain;
+  section.header-slider {
+    margin-top: 92px;
+    h2.slider-heading {
+      @extend .web-slider-header-text;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+}
+
+main {
+  .rover-food-desc-container {
+    .rcover-food-desc {
+      @extend .Green-Header;
+    }
+    .double-qoute-icon{
+      font-size: 60px;
+    }
+    .recover-food-img {
+      display: block;
+      float: left;
+      width: 100%;
+      height: 278px;
+    }
+  }
+  .team-container {
+    .team-heading {
+      @extend .Black-Header;
+      font-size: 45px;
+      border-bottom: 10px solid #00dc72;
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+  .advisor-container {
+    .advisor-heading {
+      @extend .Black-Header;
+      font-size: 45px;
+      border-bottom: 10px solid #00dc72;
+      width: 300px;
+      margin: 0 auto;
+    }
+  }
+}

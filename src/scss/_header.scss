@@ -76,31 +76,68 @@ header {
   }
 }
 
-
-// Small screens
-@media screen and ( max-width: 600px ) {
-
- header {
-   .copia-logo{
-     display: block;
-     width: 55px;
-     height: 64px;
-     margin: 0 auto;
-   }
- }
-}
-
-
-//Medium screens
-@media screen and ( min-width: 992px ) {
+@media #{$small-and-down} {
   header {
-    .copia-logo{
-
+    .mobile-nav-container {
+      a.copia-logo-mobile {
+        display: block;
+        width: 60px;
+        margin: 0 auto;
+        height: 55px;
+        margin-top: 12px;
+      }
+      .nav-icon {
+        display: block;
+        float: left;
+        height: 43px;
+        margin: 16px 0 0 11px;
+      }
+      .mobile-getting-started {
+        padding-left: 0;
+        position: relative;
+        margin-top: 17px;
+        i.material-icons.right {
+          margin-left: 0 !important;
+          display: block;
+          font-size: 24px;
+          height: 24px;
+          line-height: 20px;
+          margin-top: 11px;
+        }
+        .get-started-btn {
+          margin: 0;
+          font-size: 16px !important;
+        }
+        ul.getting-started{
+          width: 182px !important;
+          right: 0;
+          top: 60px !important;
+          background: transparent;
+          li {
+            border-bottom: none !important;
+            a.g-started-item:hover {
+              border: none !important;
+              padding: 14px 0;
+            }
+            a.g-started-item{
+              padding: 14px 0;
+              border: none !important;
+            }
+          }
+          li:hover {
+            background-color: #00dc72;
+          }
+        }
+      }
     }
   }
 }
-
-//Large screen
-@media screen and ( min-width:  993px ) {
-
+@media #{$medium-and-up} {
+  // styles for medium screens and larger
+}
+@media #{$medium-and-down} {
+  // styles for medium screens and down
+}
+@media #{$large-and-up} {
+  // styles for large screens and up
 }
